@@ -27,7 +27,6 @@ Users with gravatars can have a default image if you want to.
 
 ### Additional requirements
 
-* [Gleez Autoloader](https://github.com/sergeyklay/gleez-autoloader) 1.0.* or higher (for testing)
 * PHPUnit 4.0.0 or higher (for testing)
 
 
