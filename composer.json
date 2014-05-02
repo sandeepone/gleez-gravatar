@@ -1,0 +1,45 @@
+{
+    "name": "gleez/gravatar",
+    "type": "library",
+    "description": "A lightweight PHP library providing easy gravatar integration",
+    "keywords": [
+        "gravatar",
+        "avatar",
+        "gleez"
+    ],
+    "homepage": "https://github.com/sergeyklay/gleez-gravatar/releases",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Gleez Team",
+            "email": "info@gleezcms.org",
+            "homepage": "http://gleezcms.org",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "info@gleez.com",
+        "issues": "https://github.com/sergeyklay/gleez-gravatar/issues",
+        "irc": "irc://irc.freenode.net/gleez",
+        "source": "https://github.com/sergeyklay/gleez-gravatar"
+    },
+    "suggest": {
+        "gleez/autoloader": "PSR-4 compliant autoloader for PHP 5.3 or higher"
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gleez\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
