@@ -172,10 +172,10 @@ Gravatar provides four levels for rating avatars by, which are named similar to 
 
 Possible values:
 
-`g` — suitable for display on all websites with any audience type
-`pg` — may contain rude gestures, provocatively dressed individuals, the lesser swear words, or mild violence
-`r` — may contain such things as harsh profanity, intense violence, nudity, or hard drug use
-`x` — may contain hardcore sexual imagery or extremely disturbing violence
+* `g` — suitable for display on all websites with any audience type
+* `pg` — may contain rude gestures, provocatively dressed individuals, the lesser swear words, or mild violence
+* `r` — may contain such things as harsh profanity, intense violence, nudity, or hard drug use
+* `x` — may contain hardcore sexual imagery or extremely disturbing violence
 
 By default, the Gravater rating is `g`.
 
