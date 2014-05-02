@@ -7,12 +7,8 @@
  * @license   http://gleezcms.org/license Gleez CMS License
  */
 
-require_once  dirname(realpath(dirname(__FILE__))).'/src/Gleez/Loader/Autoloader.php';
-
 // turn on all errors
 error_reporting(E_ALL);
 
 // autoloader
-$loader = new Gleez\Loader\Autoloader(array('autoregister' => true));
-
-$loader->register(true);
+require dirname(__DIR__) . '/autoload.php';
