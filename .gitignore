@@ -1,0 +1,13 @@
+.*
+*~
+
+!.gitignore
+!.gitreview
+!.gitattributes
+
+!*.yml
+
+composer.phar
+composer.lock
+
+build/
