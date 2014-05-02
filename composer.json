@@ -30,6 +30,7 @@
         "php": ">=5.3.0"
     },
     "require-dev": {
+        "gleez/autoloader": "1.0.*",
         "phpunit/phpunit": "4.0.*"
     },
     "autoload": {
