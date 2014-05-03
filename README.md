@@ -1,8 +1,6 @@
 # Gleez Gravatar
 
 [![Build Status](https://travis-ci.org/sergeyklay/gleez-gravatar.svg?branch=master)](https://travis-ci.org/sergeyklay/gleez-gravatar)
-[![Total Downloads](http://img.shields.io/packagist/dm/gleez/gravatar.svg)](https://packagist.org/packages/gleez/gravatar)
-[![Latest Version](http://img.shields.io/github/tag/sergeyklay/gleez-gravatar.svg)](https://github.com/sergeyklay/gleez-gravatar/releases)
 [![Dependency Status](https://www.versioneye.com/user/projects/5363c11efe0d07194f000001/badge.png)](https://www.versioneye.com/user/projects/5363c11efe0d07194f000001)
 
 
