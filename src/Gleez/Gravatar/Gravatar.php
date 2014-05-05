@@ -125,7 +125,7 @@ class Gravatar implements Gravatarable
     }
 
     /**
-     * Create and return and return Gleez\Gravatar instance
+     * Create and return and return Gleez\Gravatar\Gravatar instance
      *
      * @return Gleez\Gravatar\Gravatar
      */
