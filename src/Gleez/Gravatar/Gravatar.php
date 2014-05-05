@@ -50,7 +50,7 @@ class Gravatar implements Gravatarable
     const MAX_AVATAR_SIZE = 2048;
 
     /**
-     * @var Gravatarable
+     * @var Gleez\Gravatar\Gravatar
      */
     protected static $instance;
 
@@ -125,9 +125,9 @@ class Gravatar implements Gravatarable
     }
 
     /**
-     * Returns the Gravatar instance
+     * Create and return and return Gleez\Gravatar\Gravatar instance
      *
-     * @return Gravatar
+     * @return Gleez\Gravatar\Gravatar
      */
     public static function getInstance()
     {
@@ -148,7 +148,7 @@ class Gravatar implements Gravatarable
      * - boolean false for the gravatar default
      *
      * @param mixed $image The default image to use
-     * @return Gravatar
+     * @return Gleez\Gravatar\Gravatar
      *
      * @throws \InvalidArgumentException
      */
@@ -194,7 +194,7 @@ class Gravatar implements Gravatarable
      * By default, images from Gravatar.com will be returned as 80x80px
      *
      * @param int $size The avatar size to use
-     * @return Gravatar
+     * @return Gleez\Gravatar\Gravatar
      *
      * @throws \InvalidArgumentException
      */
@@ -231,7 +231,7 @@ class Gravatar implements Gravatarable
      * Set the maximum allowed rating for avatars
      *
      * @param string $rating The maximum rating to use for avatars ('g', 'pg', 'r', 'x')
-     * @return Gravatar
+     * @return Gleez\Gravatar\Gravatar
      *
      * @throws \InvalidArgumentException
      */
@@ -276,7 +276,7 @@ class Gravatar implements Gravatarable
     /**
      * Enable the use of the secure protocol for image URLs
      *
-     * @return Gravatar
+     * @return Gleez\Gravatar\Gravatar
      */
     public function enableSecureURL()
     {
@@ -288,7 +288,7 @@ class Gravatar implements Gravatarable
     /**
      * Disable the use of the secure protocol for image URLs
      *
-     * @return Gravatar
+     * @return Gleez\Gravatar\Gravatar
      */
     public function disableSecureURL()
     {
@@ -311,7 +311,7 @@ class Gravatar implements Gravatarable
     /**
      * Forces Gravatar to display default image
      *
-     * @return Gravatar
+     * @return Gleez\Gravatar\Gravatar
      */
     public function enableForceDefault()
     {
@@ -323,7 +323,7 @@ class Gravatar implements Gravatarable
     /**
      * Disable forces default image
      *
-     * @return Gravatar
+     * @return Gleez\Gravatar\Gravatar
      */
     public function disableForceDefault()
     {
@@ -346,6 +346,7 @@ class Gravatar implements Gravatarable
      * Build the Gravatar URL based on the configuration and provided email address
      *
      * @param string $email The email to get the gravatar for
+     * @return string
      */
     public function buildURL($email)
     {
