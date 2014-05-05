@@ -208,7 +208,10 @@ class Gravatar implements Gravatarable
 
         if(false === filter_var($size, FILTER_VALIDATE_INT, $options)) {
             throw new InvalidArgumentException(
-                'Avatar size must be an integer within '.static::MIN_AVATAR_SIZE.' pixels and '.static::MAX_AVATAR_SIZE.' pixels'
+                sprintf(
+                    "Can't set Gravatar size. Size must be an integer within %s and %s pixels",
+                    static::MIN_AVATAR_SIZE, static::MAX_AVATAR_SIZE
+                )
             );
         }
 
@@ -242,7 +245,7 @@ class Gravatar implements Gravatarable
 
         if (!isset($this->validRatings[$rating])) {
             throw new InvalidArgumentException(
-                sprintf('Invalid rating "%s" specified. Available for use only: %s.', $rating, $allowed)
+                sprintf("Invalid rating '%s' specified. Available for use only: %s.", $rating, $allowed)
             );
         }
 
