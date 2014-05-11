@@ -1,6 +1,6 @@
 Gleez License Agreement
 
-This license is a legal agreement between you and the Gleez Team for the use of Gleez CMS (the "Software"). By obtaining the Software you agree to comply with the terms and conditions of this license.
+This license is a legal agreement between you and the Gleez Team for the use of Gleez Gravatr (the "Software"). By obtaining the Software you agree to comply with the terms and conditions of this license.
 
 Copyright (c) 2010-2014 Gleez Team
 All rights reserved.
