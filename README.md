@@ -21,6 +21,7 @@ Users with gravatars can have a default image if you want to.
 * 5.4.x
 * 5.5.x
 * 5.6.x
+* 7
 * hhvm
 
 ### Additional requirements
