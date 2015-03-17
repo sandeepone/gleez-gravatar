@@ -27,6 +27,7 @@ Users with gravatars can have a default image if you want to.
 ### Additional requirements
 
 * PHPUnit 4.0.0 or higher (for testing)
+* PHP_CodeSniffer 2.x or higher (for testing)
 
 
 ## Installation

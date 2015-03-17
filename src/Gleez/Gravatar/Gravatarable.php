@@ -9,9 +9,6 @@
 
 namespace Gleez\Gravatar;
 
-// If already registered
-if (interface_exists(__NAMESPACE__ . '\Gravatarable')) return;
-
 /**
  * Gravatar interface
  *
@@ -19,7 +16,7 @@ if (interface_exists(__NAMESPACE__ . '\Gravatarable')) return;
  *
  * @package  Gleez\Gravatar
  * @author   Gleez Team
- * @version  1.0.0
+ * @version  1.0.1
  */
 interface Gravatarable
 {

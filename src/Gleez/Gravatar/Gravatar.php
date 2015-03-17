@@ -21,7 +21,7 @@ use InvalidArgumentException;
  *
  * @package  Gleez\Gravatar
  * @author   Gleez Team
- * @version  1.0.0
+ * @version  1.0.1
  */
 class Gravatar implements Gravatarable
 {
@@ -50,7 +50,7 @@ class Gravatar implements Gravatarable
     const MAX_AVATAR_SIZE = 2048;
 
     /**
-     * @var Gleez\Gravatar\Gravatar
+     * @var \Gleez\Gravatar\Gravatar
      */
     protected static $instance;
 
@@ -127,7 +127,7 @@ class Gravatar implements Gravatarable
     /**
      * Create and return and return Gleez\Gravatar\Gravatar instance
      *
-     * @return Gleez\Gravatar\Gravatar
+     * @return \Gleez\Gravatar\Gravatar
      */
     public static function getInstance()
     {
@@ -148,7 +148,7 @@ class Gravatar implements Gravatarable
      * - boolean false for the gravatar default
      *
      * @param mixed $image The default image to use
-     * @return Gleez\Gravatar\Gravatar
+     * @return \Gleez\Gravatar\Gravatar
      *
      * @throws \InvalidArgumentException
      */
@@ -163,7 +163,7 @@ class Gravatar implements Gravatarable
         $default = strtolower(trim($image));
 
         if (!isset($this->validDafaults[$default])) {
-            if(!filter_var($image, FILTER_VALIDATE_URL, FILTER_FLAG_HOST_REQUIRED)) {
+            if (!filter_var($image, FILTER_VALIDATE_URL, FILTER_FLAG_HOST_REQUIRED)) {
                 throw new InvalidArgumentException(
                     'The default image specified is not a recognized gravatar "default" and is not a valid URL'
                 );
@@ -194,7 +194,7 @@ class Gravatar implements Gravatarable
      * By default, images from Gravatar.com will be returned as 80x80px
      *
      * @param int $size The avatar size to use
-     * @return Gleez\Gravatar\Gravatar
+     * @return \Gleez\Gravatar\Gravatar
      *
      * @throws \InvalidArgumentException
      */
@@ -204,15 +204,15 @@ class Gravatar implements Gravatarable
             'options' => array(
                 'min_range' => static::MIN_AVATAR_SIZE,
                 'max_range' => static::MAX_AVATAR_SIZE
-        ));
+            )
+        );
 
-        if(false === filter_var($size, FILTER_VALIDATE_INT, $options)) {
-            throw new InvalidArgumentException(
-                sprintf(
-                    "Can't set Gravatar size. Size must be an integer within %s and %s pixels",
-                    static::MIN_AVATAR_SIZE, static::MAX_AVATAR_SIZE
-                )
-            );
+        if (false === filter_var($size, FILTER_VALIDATE_INT, $options)) {
+            throw new InvalidArgumentException(sprintf(
+                "Can't set Gravatar size. Size must be an integer within %s and %s pixels",
+                static::MIN_AVATAR_SIZE,
+                static::MAX_AVATAR_SIZE
+            ));
         }
 
         $this->size = $size;
@@ -234,7 +234,7 @@ class Gravatar implements Gravatarable
      * Set the maximum allowed rating for avatars
      *
      * @param string $rating The maximum rating to use for avatars ('g', 'pg', 'r', 'x')
-     * @return Gleez\Gravatar\Gravatar
+     * @return \Gleez\Gravatar\Gravatar
      *
      * @throws \InvalidArgumentException
      */
@@ -279,7 +279,7 @@ class Gravatar implements Gravatarable
     /**
      * Enable the use of the secure protocol for image URLs
      *
-     * @return Gleez\Gravatar\Gravatar
+     * @return \Gleez\Gravatar\Gravatar
      */
     public function enableSecureURL()
     {
@@ -291,7 +291,7 @@ class Gravatar implements Gravatarable
     /**
      * Disable the use of the secure protocol for image URLs
      *
-     * @return Gleez\Gravatar\Gravatar
+     * @return \Gleez\Gravatar\Gravatar
      */
     public function disableSecureURL()
     {
@@ -314,7 +314,7 @@ class Gravatar implements Gravatarable
     /**
      * Forces Gravatar to display default image
      *
-     * @return Gleez\Gravatar\Gravatar
+     * @return \Gleez\Gravatar\Gravatar
      */
     public function enableForceDefault()
     {
@@ -326,7 +326,7 @@ class Gravatar implements Gravatarable
     /**
      * Disable forces default image
      *
-     * @return Gleez\Gravatar\Gravatar
+     * @return \Gleez\Gravatar\Gravatar
      */
     public function disableForceDefault()
     {
