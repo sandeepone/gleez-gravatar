@@ -20,7 +20,6 @@
     "support": {
         "email": "info@gleez.com",
         "issues": "https://github.com/sergeyklay/gleez-gravatar/issues",
-        "irc": "irc://irc.freenode.net/gleez",
         "source": "https://github.com/sergeyklay/gleez-gravatar"
     },
     "suggest": {
