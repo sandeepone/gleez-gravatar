@@ -221,8 +221,9 @@ Some things to watch out for:
 To run the tests at the command line, go to the `tests` directory and run `phpunit`:
 
 ```bash
-$ cd tests
+$ composer install --dev --prefer-source
 $ phpunit \
+--configuration tests/phpunit.xml.dist \
 --coverage-text \
 --coverage-clover ../build/logs/clover.xml \
 --coverage-html   ../build/report
