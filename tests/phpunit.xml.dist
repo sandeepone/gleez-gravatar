@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <phpunit
-    bootstrap="./bootstrap.php"
+    bootstrap="./Bootstrap.php"
     colors="true"
     convertErrorsToExceptions="true"
     convertNoticesToExceptions="true"
@@ -11,15 +11,15 @@
     enforce-time-limit="true">
   <testsuites>
     <testsuite name="Gleez Gravatar Test Suite">
-        <directory>./src</directory>
+        <directory>./</directory>
     </testsuite>
   </testsuites>
 
   <filter>
     <whitelist addUncoveredFilesFromWhitelist="true">
-      <directory suffix=".php">./src</directory>
+      <directory suffix=".php">./</directory>
       <exclude>
-          <directory>./src</directory>
+          <directory>./</directory>
       </exclude>
     </whitelist>
   </filter>

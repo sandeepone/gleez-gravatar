@@ -21,7 +21,7 @@ use InvalidArgumentException;
  *
  * @package  Gleez\Gravatar
  * @author   Gleez Team
- * @version  1.0.1
+ * @version  1.0.2
  */
 class Gravatar implements Gravatarable
 {
