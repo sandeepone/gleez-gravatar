@@ -16,7 +16,7 @@ namespace Gleez\Gravatar;
  *
  * @package  Gleez\Gravatar
  * @author   Gleez Team
- * @version  1.0.1
+ * @version  1.0.2
  */
 interface Gravatarable
 {

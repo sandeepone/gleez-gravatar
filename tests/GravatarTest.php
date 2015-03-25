@@ -10,15 +10,16 @@
 namespace Gleez\Tests\Gravatar;
 
 use Gleez\Gravatar\Gravatar;
+use PHPUnit_Framework_TestCase;
 
 /**
  * Gleez Gravatar Test
  *
  * @package  Gleez\Gravatar\UnitTest
  * @author   Gleez Team
- * @version  1.0.0
+ * @version  1.0.2
  */
-class GravatarTest extends \PHPUnit_Framework_TestCase
+class GravatarTest extends PHPUnit_Framework_TestCase
 {
     protected $gravatar;
 
