@@ -10,7 +10,7 @@
 namespace Gleez\Tests\Gravatar;
 
 // turn on all errors
-error_reporting(E_ALL | E_STRICT);
+error_reporting(-1);
 
 /**
  * Test bootstrap, for setting up autoloading
