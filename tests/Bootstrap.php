@@ -19,15 +19,17 @@ class Bootstrap
 {
     public static function init()
     {
-        static::initAutoloader();
+        self::initAutoloader();
     }
 
     protected static function initAutoloader()
     {
-        $vendorPath = __DIR__ . '/../vendor';
+        $vendorPath = dirname(dirname(__FILE__)) . '/vendor';
 
-        if (! is_readable($vendorPath . '/autoload.php')) {
-            throw new \RuntimeException('Unable to locate autoloader. Run `composer install` from the project root directory.');
+        if (!is_file($vendorPath . '/autoload.php')) {
+            throw new \RuntimeException(
+                'Unable to locate autoloader. Run `composer install` from the project root directory.'
+            );
         }
 
         include $vendorPath . '/autoload.php';
